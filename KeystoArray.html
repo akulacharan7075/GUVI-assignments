@@ -1,0 +1,12 @@
+<script>  
+    var obj = { "1": 5, "2": 7, "3": 0, "4": 0, "5": 0 }; 
+    var result = Object.keys(obj).map(function (key) { 
+         return [Number(key), obj[key]]; 
+    }); 
+      for(var i = 0; i < result.length; i++) { 
+        for(var z = 0; z < result[i].length; z++) { 
+            document.write(result[i][z] + " "); 
+        } 
+         
+    } 
+</script>  

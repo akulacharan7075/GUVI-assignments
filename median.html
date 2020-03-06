@@ -1,0 +1,32 @@
+<script>
+
+function sort(a)
+{
+for(var i=0;i<a.length;i++)
+
+{
+for(var j=i+1;j<a.length;j++)
+{
+var temp
+  if(a[i]>a[j])
+  {
+  temp=a[i]
+  a[i]=a[j]
+  a[j]=temp
+  }
+
+
+}
+}
+return a
+}
+
+var l=[4,3,2,6,3]
+console.log(l)
+l=sort(l)
+n=l.length
+console.log(l[n/2])
+
+
+
+</script>
