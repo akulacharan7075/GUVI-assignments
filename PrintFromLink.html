@@ -1,0 +1,32 @@
+<script>
+var request = new XMLHttpRequest()
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', 'https://restcountries.eu/rest/v2/all', true)
+// Send request
+request.send()
+request.onload = function() {
+  // Begin accessing JSON data here
+var data = JSON.parse(this.response)
+//console.log(data)
+
+//for(i in data)
+//{
+//console.log(data[i].flag," is the flag for the country name",data[i].name)
+//}
+var a=[]
+for (i in data)
+{
+a.push(data[i].flag," is the flag for the country name",data[i].name)
+
+}
+
+
+for (i in data)
+{
+console.log(a[i])
+
+}
+}
+
+</script>

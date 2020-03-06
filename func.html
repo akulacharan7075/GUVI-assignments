@@ -1,0 +1,15 @@
+<script>
+var func2={
+printname:function(age,city){
+console.log(age,city)}
+}
+
+var anotherfunc={
+fn:"sf",
+ln:"sfds",
+printname1:function(){
+console.log(this.fn,this.ln)
+}}
+
+func2.printname.call(anotherfunc,10,"chennai")
+</script>

@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<input type="text" id="screen2" ></input>
+
+<input type="text" id="scoreboard1" ></input>
+<input type="text" id="scoreboard2" ></input>
+
+<script>
+var team1score=localStorage.getItem("sc1")
+var team2score=localStorage.getItem("sc2")
+var team1players=localStorage.getItem("ply1")
+var team2players=localStorage.getItem("pla2")
+
+if(team1score>team2score)
+{
+document.getElementById("screen2").value="team 1 won"
+}
+else
+{
+document.getElementById("screen2").value="team 2 won"
+}
+document.getElementById("scoreboard1").value=team1players
+document.getElementById("scoreboard2").value=team2players
+
+
+</script>
+</body>
+</html>
+
